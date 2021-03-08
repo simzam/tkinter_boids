@@ -22,9 +22,11 @@ class Boid:
 
 
     def separation(self, neighbours):
-        
+        for neighbour in neighbours:
+            self.distance_from_point(neighbour.pos)
         
     def alignment(self, neighbours):
+        for boid in 
             
     def cohesion(self, neighbours):
         avg_pos = [0, 0]
@@ -34,12 +36,12 @@ class Boid:
             
 
     def avoid_boundaries(self, domain):
-    """ boids live inside a limited domain, in order to keep the boids in the 
-    window ensure that the move in the opposite direction when they encounter
-    a wall. This overshadows all other movement."""
-    
+        """ boids live inside a limited domain, in order to keep the boids in the 
+        window ensure that the move in the opposite direction when they encounter
+        a wall. This overshadows all other movement."""
+        pass
         
-        
+
         
     def distance_from_point(self, point):
         """ distance from position of boid to a given point. """
